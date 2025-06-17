@@ -1,0 +1,144 @@
+<!-- checkout.html -->
+<h2>Checkout</h2>
+<div id="checkout-summary"></div>
+<button onclick="clearCart(); alert('Thank you for your purchase!'); location.href='shop.html';">Complete Order</button>
+
+<script src="cart.js"></script>
+<script>
+  const cart = getCart();
+  const summary = document.getElementById('checkout-summary');
+  let total = 0;
+
+  cart.forEach(item => {
+    summary.innerHTML += `<p>${item.name} - $${item.price}</p>`;
+    total += item.price;
+  });
+
+  summary.innerHTML += `<hr><p><strong>Total: $${total.toFixed(2)}</strong></p>`;
+</script>
+<style>
+body {
+      background: url('images/IMG_5038.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      position: relative;
+    }
+    nav a {
+      color: #cde7d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #a3f7bf;
+    }
+    h1, p {
+      text-align: center;
+    }
+    .cta-btn {
+      display: block;
+      width: max-content;
+      margin: 1.5rem auto;
+      padding: 0.75rem 1.5rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .cta-btn:hover {
+      background-color: #218838;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 15px 3px #28a745;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .badge-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .feature-section {
+      margin-top: 3rem;
+      padding: 3rem 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    .feature-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .feature-description {
+      font-size: 1.1rem;
+    }
+    .row-feature {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .row-feature img {
+      max-width: 40%;
+      border-radius: 8px;
+    }
+    /* Style for the view cart button */
+    .view-cart-btn {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .view-cart-btn:hover {
+      background-color: #218838;
+    }
+</style>
+
+<nav class="mb-4 d-flex justify-content-between align-items-center">
+      <div class="d-none d-md-block text-center w-100">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a> |
+        <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a> |
+        <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a> |
+        <a href="contact.html"><i class="fas fa-comment"></i> Contact Us</a>
+      </div>
+
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="mobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="mobileDropdown">
+          <li><a class="dropdown-item text-white" href="home.html">🏠 Home</a></li>
+          <li><a class="dropdown-item text-white" href="shop.html">🎣 Shop</a></li>
+          <li><a class="dropdown-item text-white" href="about.html">🧭 About Us</a></li>
+          <li><a class="dropdown-item text-white" href="contact.html">✉️ Contact</a></li>
+        </ul>
+      </div>
+    </nav>

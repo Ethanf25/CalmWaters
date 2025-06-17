@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>View Cart - Calm Waters Tackle Co.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background: url('images/IMG_5038.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      position: relative; 
+    }
+    nav a {
+      color: #cde7d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #a3f7bf;
+    }
+    h1, p {
+      text-align: center;
+    }
+    .cta-btn {
+      display: block;
+      width: max-content;
+      margin: 1.5rem auto;
+      padding: 0.75rem 1.5rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    .cta-btn:hover {
+      background-color: #218838;
+    }
+    .product-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .product-card:hover {
+      box-shadow: 0 0 15px 3px #28a745;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .badge-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .feature-section {
+      margin-top: 3rem;
+      padding: 3rem 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    .feature-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .feature-description {
+      font-size: 1.1rem;
+    }
+    .row-feature {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .row-feature img {
+      max-width: 40%;
+      border-radius: 8px;
+    }
+    /* Style for the view cart button */
+    .view-cart-btn {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .view-cart-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <!-- View Cart Button -->
+    <button class="view-cart-btn" onclick="window.location.href='view-cart.html'"><i class="fas fa-shopping-cart"></i> View Cart</button>
+
+    <nav class="mb-4 d-flex justify-content-between align-items-center">
+      <div class="d-none d-md-block text-center w-100">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a> |
+        <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a> |
+        <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a> |
+        <a href="contact.html"><i class="fas fa-comment"></i> Contact Us</a>
+      </div>
+
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="mobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="mobileDropdown">
+          <li><a class="dropdown-item text-white" href="home.html">🏠 Home</a></li>
+          <li><a class="dropdown-item text-white" href="shop.html">🎣 Shop</a></li>
+          <li><a class="dropdown-item text-white" href="about.html">🧭 About Us</a></li>
+          <li><a class="dropdown-item text-white" href="contact.html">✉️ Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Your Cart</h1>
+    <p>Review your selected items before checking out.</p>
+
+    <!-- Cart Items -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure1.png" alt="Topwater Popper" class="img-fluid mb-2" />
+          <h5>Topwater Popper</h5>
+          <p>Price: $19.99</p>
+          <button class="btn btn-danger">Remove</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure2.png" alt="Deep Diver" class="img-fluid mb-2" />
+          <h5>Deep Diver</h5>
+          <p>Price: $24.99</p>
+          <button class="btn btn-danger">Remove</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure3.png" alt="Soft Bait Swimmer" class="img-fluid mb-2" />
+          <h5>Soft Bait Swimmer</h5>
+          <p>Price: $14.99</p>
+          <button class="btn btn-danger">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Cart Total -->
+    <div class="text-center">
+      <h2>Total: $59.97</h2>
+      <a href="checkout.html" class="cta-btn">Proceed to Checkout</a>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Testimonials -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"These lures landed me a tournament win! Unmatched quality." – Mike R., Pro Angler</p>
+        </div>
+        <div class="testimonial">
+          <p>"Calm Waters lures always perform. I never leave the dock without them." – Jenna S., Weekend Fisher</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="badge-section">
+          <h5>🏆 Trusted by Anglers Since 1998</h5>
+          <p>Hand-made in the USA • Satisfaction Guaranteed</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Additional Professional Information Section -->
+    <div class="feature-section">
+      <h2 class="feature-heading text-center">Why Choose Calm Waters Tackle Co.?</h2>
+      <div class="row-feature">
+        <div class="col-md-6">
+          <h3 class="text-light">Craftsmanship at its Finest</h3>
+          <p class="feature-description text-light">Our lures are hand-crafted with the finest materials, ensuring durability, reliability, and performance on every cast. Each lure is individually inspected for precision and quality.</p>
+        </div>
+        <img src="images/handcrafted-lures.jpg" alt="Handcrafted Lures" />
+      </div>
+      <div class="row-feature">
+        <img src="images/angler-action.jpg" alt="Angler Action" />
+        <div class="col-md-6">
+          <h3 class="text-light">Proven Success on the Water</h3>
+          <p class="feature-description text-light">Our lures have been proven to attract fish in all conditions. From calm lakes to fast-moving rivers, our products guarantee you’ll make the catch you’ve been dreaming about.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <h2>Join the Calm Waters Family!</h2>
+      <p>Ready to upgrade your fishing gear? Explore our full range of hand-crafted lures and get ready to catch more fish than ever before.</p>
+      <a href="shop.html" class="cta-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calm Waters Tackle Co.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container py-5">
+    <!-- View Cart Button -->
+    <button class="view-cart-btn" onclick="window.location.href='view-cart.html'">
+      <i class="fas fa-shopping-cart"></i> View Cart
+    </button>
+
+    <!-- Navigation -->
+    <nav class="mb-4 d-flex justify-content-between align-items-center">
+      <!-- Desktop Links -->
+      <div class="d-none d-md-block text-center w-100">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a> |
+        <a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a> |
+        <a href="about.html"><i class="fa fa-info-circle"></i> About Us</a> |
+        <a href="contact.html"><i class="fas fa-comment"></i> Contact Us</a>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="mobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menu
+        </button>
+        <ul class="dropdown-menu bg-dark" aria-labelledby="mobileDropdown">
+          <li><a class="dropdown-item" href="home.html">Home</a></li>
+          <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+          <li><a class="dropdown-item" href="about.html">About Us</a></li>
+          <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <h1>Welcome to Calm Waters Tackle Co.</h1>
+    <p>Premium hand-crafted lures trusted by anglers nationwide.</p>
+    <a href="shop.html" class="cta-btn"><i class="fas fa-shopping-cart"></i> Shop Lures Now</a>
+
+    <hr class="my-4 text-light">
+
+    <!-- Featured Products -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure1.png" alt="Topwater Popper" class="img-fluid mb-2" />
+          <h5>Topwater Popper</h5>
+          <p>Explosive surface strikes—great for bass fishing.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure2.png" alt="Deep Diver" class="img-fluid mb-2" />
+          <h5>Deep Diver</h5>
+          <p>Reaches those elusive deep dwellers with precision.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="images/lure3.png" alt="Soft Bait Swimmer" class="img-fluid mb-2" />
+          <h5>Soft Bait Swimmer</h5>
+          <p>Realistic movement that fools even smart fish.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Testimonials -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"These lures landed me a tournament win! Unmatched quality." – Mike R., Pro Angler</p>
+        </div>
+        <div class="testimonial">
+          <p>"Calm Waters lures always perform. I never leave the dock without them." – Jenna S., Weekend Fisher</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="badge-section">
+          <h5>🏆 Trusted by Anglers Since 1998</h5>
+          <p>Hand-made in the USA • Satisfaction Guaranteed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="feature-section">
+      <h2 class="feature-heading text-center">Why Choose Calm Waters Tackle Co.?</h2>
+      <div class="row-feature">
+        <div class="col-md-6">
+          <h3 class="text-light">Craftsmanship at its Finest</h3>
+          <p class="feature-description text-light">Our lures are hand-crafted with the finest materials, ensuring durability, reliability, and performance on every cast. Each lure is individually inspected for precision and quality.</p>
+        </div>
+        <img src="images/handcrafted-lures.jpg" alt="Handcrafted Lures" />
+      </div>
+      <div class="row-feature">
+        <img src="images/angler-action.jpg" alt="Angler Action" />
+        <div class="col-md-6">
+          <h3 class="text-light">Proven Success on the Water</h3>
+          <p class="feature-description text-light">Our lures have been proven to attract fish in all conditions. From calm lakes to fast-moving rivers, our products guarantee you’ll make the catch you’ve been dreaming about.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <h2>Join the Calm Waters Family!</h2>
+      <p>Ready to upgrade your fishing gear? Explore our full range of hand-crafted lures and get ready to catch more fish than ever before.</p>
+      <a href="shop.html" class="cta-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CSS at Bottom -->
+
+</body>
+</html>
