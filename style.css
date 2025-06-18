@@ -1,118 +1,139 @@
 body {
-      background: url('images/IMG_5038.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      background-color: rgba(0, 0, 0, 0.65);
-      padding: 2rem;
-      border-radius: 10px;
-      margin-top: 2rem;
-      position: relative;
-    }
-    nav a {
-      color: #cde7d8;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #a3f7bf;
-    }
-    h1, p {
-      text-align: center;
-    }
-    .cta-btn {
-      display: block;
-      width: max-content;
-      margin: 1.5rem auto;
-      padding: 0.75rem 1.5rem;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    .cta-btn:hover {
-      background-color: #218838;
-    }
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      transition: box-shadow 0.3s ease-in-out;
-    }
-    .product-card:hover {
-      box-shadow: 0 0 15px 3px #28a745;
-    }
-    .testimonial {
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-    .badge-section {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .feature-section {
-      margin-top: 3rem;
-      padding: 3rem 0;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-    }
-    .feature-heading {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .feature-description {
-      font-size: 1.1rem;
-    }
-    .row-feature {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .row-feature img {
-      max-width: 40%;
-      border-radius: 8px;
-    }
-    .view-cart-btn {
-      position: absolute;
-      top: 15px;
-      right: 30px;
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .view-cart-btn:hover {
-      background-color: #218838;
-    }
-    .dropdown-item {
-      color: #a3f7bf;
-    }
-    .dropdown-toggle {
-      color: #a3f7bf;
-      border: #a3f7bf 1px solid;
-      text-align: left;
-    }
-    .dropdown-menu {
-      text-align: left;
-    }
-    .dropdown-menu:hover {
-      background-color: #218838;
-      color: white;
-    }
+  background: url('images/IMG_5038.jpeg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  color: #fff !important;
+  font-family: 'Segoe UI', sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  padding: 2rem !important;
+  border-radius: 10px !important;
+  margin-top: 2rem !important;
+  position: relative !important;
+}
+
+nav a {
+  color: #cde7d8 !important;
+  margin: 0 15px !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+nav a:hover {
+  text-decoration: underline !important;
+  color: #a3f7bf !important; /* green-tinted */
+}
+
+h1, p {
+  text-align: center !important;
+}
+
+.cta-btn {
+  display: block !important;
+  width: max-content !important;
+  margin: 1.5rem auto !important;
+  padding: 0.75rem 1.5rem !important;
+  background-color: #28a745 !important; /* green */
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 1.2rem !important;
+  text-decoration: none !important;
+}
+
+.cta-btn:hover {
+  background-color: #218838 !important; /* dark green */
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  padding: 1rem !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 15px 3px #28a745 !important; /* green glow */
+}
+
+.testimonial {
+  font-style: italic !important;
+  margin-bottom: 1rem !important;
+}
+
+.badge-section {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+}
+
+.feature-section {
+  margin-top: 3rem !important;
+  padding: 3rem 0 !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+}
+
+.feature-heading {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+}
+
+.feature-description {
+  font-size: 1.1rem !important;
+}
+
+.row-feature {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.row-feature img {
+  max-width: 40% !important;
+  border-radius: 8px !important;
+}
+
+.view-cart-btn {
+  position: absolute !important;
+  top: 15px !important;
+  right: 30px !important;
+  background-color: #28a745 !important; /* green */
+  color: white !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+}
+
+.view-cart-btn:hover {
+  background-color: #218838 !important; /* dark green */
+}
+
+.dropdown-item {
+  color: #a3f7bf !important; /* green-tinted */
+}
+
+.dropdown-toggle {
+  color: #a3f7bf !important;
+  border: #a3f7bf 1px solid !important;
+  text-align: left !important;
+}
+
+.dropdown-menu {
+  text-align: left !important;
+}
+
+.dropdown-menu:hover {
+  background-color: #218838 !important; /* dark green */
+  color: white !important;
+}
